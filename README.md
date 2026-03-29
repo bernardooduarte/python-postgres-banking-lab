@@ -29,10 +29,10 @@ A banking system built with Python and PostgreSQL, covering SQL fundamentals thr
     cp .env.example .env
     ```
 5. Create the database and run the schema:
-    ```bash
-    psql -U postgres -c "CREATE DATABASE banking_lab;"
-    psql -U postgres -d banking_lab -f src/schema.sql
-    ```
+   ```bash
+   psql -U postgres -c "CREATE DATABASE banking_lab;"
+   python src/schema.py
+   ```
 
 ## Running the API
 
