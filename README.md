@@ -52,7 +52,7 @@ python -m pytest -v
 
 - `src/`
   - `database.py` - Database connection
-  - `schema.py` -v DDL - creates tables and constraints
+  - `schema.py` - DDL - creates tables and constraints
   - `operations.py` - Deposit, withdraw, transfer
   - `queries.py` - Account queries
   - `reports.py` - Window function reports
