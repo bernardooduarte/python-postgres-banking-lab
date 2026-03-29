@@ -15,19 +15,19 @@ A banking system built with Python and PostgreSQL, covering SQL fundamentals thr
 
 1. Clone the repository
 2. Create and activate a virtual environment:
-    ```bash
-    python -m venv .venv
-    .venv\Scripts\activate  # Windows
-    source .venv/bin/activate  # Linux/Mac
-    ```
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate  # Windows
+   source .venv/bin/activate  # Linux/Mac
+   ```
 3. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 4. Copy `.env.example` to `.env` and fill in your PostgreSQL credentials:
-    ```bash
-    cp .env.example .env
-    ```
+   ```bash
+   cp .env.example .env
+   ```
 5. Create the database and run the schema:
    ```bash
    psql -U postgres -c "CREATE DATABASE banking_lab;"
@@ -52,7 +52,7 @@ python -m pytest -v
 
 - `src/`
   - `database.py` - Database connection
-  - `schema.sql` - DDL operations
+  - `schema.py` -v DDL - creates tables and constraints
   - `operations.py` - Deposit, withdraw, transfer
   - `queries.py` - Account queries
   - `reports.py` - Window function reports
